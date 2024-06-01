@@ -1,11 +1,8 @@
-
 classDiagram
-    ReprodutorMusical <|-- IPhone
-    AparelhoEletronico <|-- IPhone
-    NavegadorInternet <|-- Iphone
-
-    class IPhone{}
-
+    IPhone --|> ReprodutorMusical 
+    IPhone --|> AparelhoEletronico 
+    IPhone --|> NavegadorInternet 
+    
     class ReprodutorMusical{
         -tocar()
         -pausar()
@@ -21,5 +18,5 @@ classDiagram
     class NavegadorInternet {
         -exibirPagina(String url)
         -adicionarNovaAba()
-        -atualizarPagina
+        -atualizarPagina()
     }
