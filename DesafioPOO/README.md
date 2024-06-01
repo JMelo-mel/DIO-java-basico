@@ -1,6 +1,4 @@
----
-title: IPhone 2007
----
+
 classDiagram
     ReprodutorMusical <|-- IPhone
     AparelhoEletronico <|-- IPhone
